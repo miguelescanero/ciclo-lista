@@ -1,6 +1,9 @@
 var lista = ["coca","pepsi","manzanita","sevenup","sprite","caballito"];
 
 
+
+
+
 //document.write("<p> El primer articulo es ");
 //document.write(lista[2] + "</p>");
 //document.write("<p> El ultimo es articulo es ");
@@ -22,6 +25,8 @@ var myList;
 var li;
 //document.write(lista);
 
+lista.push(prompt("Introduce el nuevo articulo"));
+document.write(lista[lista.length-1]);
 
 
 n = lista.length;
@@ -31,9 +36,4 @@ myList = document.getElementById("results");
 		li.innerHTML=lista[i];
 		myList.appendChild(li);
 
-}
-
-function agregar(){
-lista.push(prompt("Introduce el nuevo articulo"));
-document.write(lista[lista.length-1] + "</p>");
 }
