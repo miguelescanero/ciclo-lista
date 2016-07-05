@@ -19,21 +19,34 @@ var lista = ["coca","pepsi","manzanita","sevenup","sprite","caballito"];
 //lista.pop();
 
 
+
 i = 0;
 lista.sort();
 var myList;
 var li;
+function imprime(){
 //document.write(lista);
-
-lista.push(prompt("Introduce el nuevo articulo"));
-document.write(lista[lista.length-1]);
-
-
-n = lista.length;
-myList = document.getElementById("results");
-	for(i = 0; i <lista.length; i++){
+		myList = document.getElementById("results");
+		for(i = 0; i <lista.length; i++){
 		li = document.createElement("li");
 		li.innerHTML=lista[i];
 		myList.appendChild(li);
-
+		}
 }
+	function agregar(){
+		lista.push(prompt("Introduce el nuevo articulo"));
+			myList = document.getElementById("results");
+			for(i = i; i <lista.length; i++){
+			li = document.createElement("li");
+			li.innerHTML=lista[i];
+			myList.appendChild(li);
+			}
+			
+	}
+
+	function ordenar(){
+		myList.sort();
+		imprime(myList);
+
+	}
+	
